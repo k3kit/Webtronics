@@ -1,0 +1,48 @@
+@use "../abstracts/mixins" as *;
+
+:root {
+  --gradient: linear-gradient(
+    152.14deg,
+    rgba(21, 191, 253, 0.7) 9.96%,
+    rgba(156, 55, 253, 0.7) 100%
+  );
+  --linear-2: linear-gradient(180deg, #1ff2ff 0%, #27f9e5 52.66%, #2fffcd 100%);
+  --liner-3: linear-gradient(
+    90deg,
+    rgba(21, 191, 253, 0) 8.03%,
+    rgba(21, 191, 253, 0.7) 69.15%,
+    rgba(156, 55, 253, 0.7) 97.95%
+  );
+
+  --clean: #ffffff;
+  --clean-5: rgba(255, 255, 255, 0.05);
+
+  --primary-100: #0a1482;
+  --primary-80: #3b48d0;
+
+  --bg: #0c102d;
+
+  --text-40: #a2cbfb;
+
+  --error: #fd4646;
+
+  --border: #636363;
+
+  // media examples
+  --content-width: 1278px;
+  --tablet-large-width: 1024px;
+  --tablet-width: 766px;
+  --mobile-big-width: 465px;
+  --mobile-small-width: 374px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  @include inter;
+  font-size: 1.6rem;
+  background-color: var(--bg);
+}
