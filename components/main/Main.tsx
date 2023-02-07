@@ -6,8 +6,10 @@ import { AboutUs } from "../aboutUs/AboutUs";
 export const Main = () => {
   return (
     <main>
-      <Intro />
-      <AboutUs />
+      <div className="container">
+        <Intro />
+        <AboutUs />
+      </div>
     </main>
   );
 };
