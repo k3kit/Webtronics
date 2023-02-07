@@ -1,0 +1,29 @@
+@use "../../styles/abstracts/mixins" as *;
+
+.header {
+}
+
+.inner {
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  @include paragraph_1;
+  margin-right: 48px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+    font-size: 33px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
