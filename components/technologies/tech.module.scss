@@ -1,0 +1,28 @@
+@use "styles/abstracts/mixins" as *;
+
+.title {
+  @include header_2;
+  text-align: center;
+}
+
+.title__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 543px;
+  gap: 16px;
+}
+
+.subtitle {
+  @include paragraph_1;
+  margin: 0 55px 0 55px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.tech {
+  margin-top: 179px;
+}
