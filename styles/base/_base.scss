@@ -38,12 +38,9 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 10px;
 }
 
 body {
-  @include inter;
-  font-size: 1.6rem;
   background-color: var(--bg);
 }
 
@@ -52,3 +49,4 @@ body {
   max-width: 1224px;
   margin: 0 auto;
 }
+

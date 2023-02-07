@@ -1,3 +1,4 @@
+@use "styles/abstracts/mixins" as *;
 .intro {
   width: 100%;
   height: 100vh;
@@ -11,6 +12,7 @@
   left: 0px;
   top: 0px;
   object-fit: cover;
+
   &__gradient {
     position: absolute;
     width: 100%;
@@ -27,7 +29,7 @@
 
 .background__container::before {
   position: absolute;
-  width: 1920px;
+  width: 100%;
   height: 382px;
   z-index: -2;
   left: 0px;
@@ -39,4 +41,36 @@
   );
   content: "";
   pointer-events: none;
+}
+
+.title {
+  @include header_1;
+}
+
+.subtitle {
+  @include paragraph_1;
+}
+
+.title__top {
+  display: flex;
+  gap: 0 57px;
+  align-items: center;
+  margin-top: 125px;
+}
+
+.subtitle {
+  max-width: 359px;
+}
+
+.title__botton {
+  display: flex;
+  gap: 0 24px;
+  align-items: center;
+}
+
+.subtitle__bottom {
+  text-align: right;
+  @include header_3;
+  margin-right: 40px;
+  
 }

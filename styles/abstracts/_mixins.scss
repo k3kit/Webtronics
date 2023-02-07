@@ -36,79 +36,86 @@
 
 //   @ --inter-font --clash-display
 
-@mixin inter(
-  $ff: var(--inter-font),
-  $fs: 1.6rem,
-  $fw: 600,
-  $lh: 1.2,
-  $color: var(--clean)
-) {
-  font-family: $ff;
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: $lh;
-  color: $color;
-}
+// @mixin inter(
+//   $ff: var(--font-inter),
+//   $fs: 1.6rem,
+//   $fw: 600,
+//   $lh: 1.2,
+//   $color: var(--clean)
+// ) {
+//   font-family: $ff;
+//   font-size: $fs;
+//   font-weight: $fw;
+//   line-height: $lh;
+//   color: $color;
+// }
 
-@mixin clash(
-  $ff: var(--clean),
-  $fs: 1.6rem,
-  $fw: 600,
-  $lh: 1.2,
-  $color: var(--secundary-light)
-) {
-  font-family: $ff;
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: $lh;
-  color: $color;
-}
+// @mixin clash(
+//   $ff: var(--font-clash-display),
+//   $fs: 1.6rem,
+//   $fw: 600,
+//   $lh: 1.2,
+//   $color: var(--clean)
+// ) {
+//   font-family: $ff;
+//   font-size: $fs;
+//   font-weight: $fw;
+//   line-height: $lh;
+//   color: $color;
+// }
 
 @mixin text {
-  font-family: var(--inter-font);
+  font-family: var(--font-inter);
   font-size: 46px;
   font-weight: 600;
   line-height: 69px;
+  color: var(--clean)
 }
 
 @mixin header_1 {
-  font-family: var(--clash-display);
+  font-family: var(--font-clash-display);
   font-size: 150px;
   font-weight: 600;
   line-height: 180px;
+  color: var(--clean)
 }
 
 @mixin header_2 {
-  font-family: var(--clash-display);
+  font-family: var(--font-clash-display);
   font-size: 72px;
   font-weight: 600;
   line-height: 86.4px;
+  color: var(--clean)
 }
 
 @mixin header_3 {
-  font-family: var(--clash-display);
+  font-family: var(--font-clash-display);
   font-size: 32px;
   font-weight: 600;
   line-height: 38.4px;
+  color: var(--clean)
 }
 
 @mixin header_4 {
-  font-family: var(--clash-display);
+  font-family: var(--font-clash-display);
   font-size: 24px;
   font-weight: 500;
   line-height: 28.8px;
+  color: var(--clean)
 }
 
 @mixin paragraph_1 {
-  font-family: var(--inter-font);
+  font-family: var(--font-inter);
   font-size: 16px;
   font-weight: 400;
   line-height: 22.4 px;
+  color: var(--clean)
 }
 
 @mixin paragraph_2 {
-  font-family: var(--inter-font);
+  font-family: var(--font-inter);
   font-size: 14px;
   font-weight: 400;
   line-height: 19.6px;
+  color: var(--clean)
 }

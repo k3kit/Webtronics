@@ -1,35 +1,25 @@
 import type { AppProps } from "next/app";
-import { Inter } from "@next/font/google";
+import { Inter, Roboto } from "@next/font/google";
 import localFont from "@next/font/local";
 import "../styles/main.scss";
 
-const inter = Inter({
-  weight: ["600", "400"],
-  style: "normal",
-  variable: "--inter-font",
+const inter = Inter({ subsets: ["latin"] });
+
+const clashDisplay = localFont({
+  src: "./clash-display-variable.ttf",
 });
-const ClashDisplay = localFont({
-  src: [
-    {
-      path: "./ClashDisplay-Semibold.woff",
-      weight: "600",
-      style: "normal",
-    },
-    {
-      path: "./ClashDisplay-Medium.woff",
-      weight: "500",
-      style: "normal",
-    },
-  ],
-  variable: "--clash-display",
+const roboto = Roboto({
+  weight: "700",
+  subsets: ["latin"],
 });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <style jsx global>{`
         :root {
-          --clash-display: ${ClashDisplay.style.fontFamily};
-          --inter-font: ${inter.style.fontFamily};
+          --font-clash-display: ${clashDisplay.style.fontFamily};
+          --font-inter: ${inter.style.fontFamily};
+          --font-roboto: ${roboto.style.fontFamily};
         }
       `}</style>
       <Component {...pageProps} />
