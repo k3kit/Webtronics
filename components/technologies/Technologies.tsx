@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./tech.module.scss";
+import { Card } from "./card/Card";
 
 export const Technologies = () => {
   return (
@@ -11,6 +12,34 @@ export const Technologies = () => {
             By the end, you’ll have the portfolio and interview skills you need
             to start your new career.
           </p>
+        </div>
+      </div>
+      <div className={styles.technology__list}>
+        <div className={styles.item}>
+          <Card
+            src={require("../../public/assets/icons/angular.svg").default.src}
+            title="Angular"
+          />
+        </div>
+        <div className={styles.item}>
+          <Card
+            src={require("../../public/assets/icons/react.svg").default.src}
+            title="React"
+          />
+        </div>
+        <div className={styles.item}>
+          <Card
+            src={require("../../public/assets/icons/vue.svg").default.src}
+            title="Vue.js "
+          />
+        </div>
+        <div className={styles.item}>
+          <Card
+            src={
+              require("../../public/assets/icons/javascript.svg").default.src
+            }
+            title="JavaScript"
+          />
         </div>
       </div>
     </div>
