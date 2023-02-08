@@ -1,0 +1,35 @@
+@use "styles/abstracts/mixins" as *;
+.title {
+  @include header_4;
+}
+
+.item {
+  position: relative;
+}
+
+.question {
+}
+
+.answer {
+  @include paragraph_1;
+  user-select: none;
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  width: calc(100% - -25px - 28px);
+  padding: 16.5px 24px;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}

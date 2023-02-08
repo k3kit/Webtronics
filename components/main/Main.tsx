@@ -4,6 +4,7 @@ import style from "./style.module.scss";
 import { AboutUs } from "../aboutUs/AboutUs";
 import { Technologies } from "../technologies/Technologies";
 import { Steps } from "../steps/Steps";
+import { Questions } from "../Questions/Questions";
 
 export const Main = () => {
   return (
@@ -13,6 +14,7 @@ export const Main = () => {
         <AboutUs />
         <Technologies />
         <Steps />
+        <Questions />
       </div>
     </main>
   );
