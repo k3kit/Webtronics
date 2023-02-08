@@ -25,6 +25,7 @@
   backdrop-filter: blur(5px);
   margin-bottom: 16px;
 }
+
 .border::before {
   content: "";
   position: absolute;

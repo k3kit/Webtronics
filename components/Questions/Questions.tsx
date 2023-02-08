@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./questions.module.scss";
 import { ReactSVG } from "react-svg";
 import { QuestionsList } from "./QuestionsList/QuestionsList";
+
 export const Questions = () => {
   return (
     <section className={styles.wrapper}>
