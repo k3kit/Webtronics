@@ -7,6 +7,7 @@ import { Steps } from "../steps/Steps";
 import { Questions } from "../Questions/Questions";
 import { Review } from "../review/Review";
 import { Gallery } from "../Gallery/Gallery";
+import { ContactUs } from "../ContactUs/ContactUs";
 
 export const Main = () => {
   return (
@@ -19,6 +20,7 @@ export const Main = () => {
         <Questions />
         <Review />
         <Gallery />
+        <ContactUs />
       </div>
     </main>
   );
