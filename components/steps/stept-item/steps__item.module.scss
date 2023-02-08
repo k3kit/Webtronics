@@ -1,0 +1,76 @@
+@use "styles/abstracts/mixins" as *;
+.container {
+  position: relative;
+  height: 228px;
+  width: 491px;
+  display: flex;
+  align-items: center;
+}
+.title {
+  @include header_4;
+}
+
+.subtitle {
+  @include header_3;
+}
+.text {
+  @include paragraph_1;
+  color: var(--text-40);
+  max-width: 408px;
+}
+
+.border {
+  display: flex;
+  border-radius: 8px;
+  position: relative;
+  backdrop-filter: blur(5px);
+  margin: 0 16px;
+}
+
+.border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: inherit;
+  border: solid transparent;
+  background: var(--gradient) border-box;
+  border-width: 2px;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.card {
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stroke {
+  position: absolute;
+  left: 0px;
+}
+
+.reverse {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.left__arrow {
+  position: absolute;
+  right: -119px;
+  z-index: 3;
+  transform-origin: 87% 50%;
+}
+
+.right__arrow {
+  position: absolute;
+  left: -105px;
+  z-index: 3;
+  // transform: rotate(180deg);
+}

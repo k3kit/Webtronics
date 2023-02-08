@@ -4,7 +4,7 @@ import { Card } from "./card/Card";
 
 export const Technologies = () => {
   return (
-    <div className={styles.tech}>
+    <section className={styles.tech}>
       <div className={styles.wrapper}>
         <div className={styles.title__info}>
           <h2 className={styles.title}>Programming technologies</h2>
@@ -42,6 +42,6 @@ export const Technologies = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

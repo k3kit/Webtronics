@@ -1,0 +1,55 @@
+@use "styles/abstracts/mixins" as *;
+
+.title {
+  @include header_2;
+  text-align: center;
+}
+
+.wrapper {
+  margin-top: 184px;
+}
+
+.left__item {
+  gap: 24px;
+  display: flex;
+  margin-top: 56px;
+  flex-direction: column;
+  row-gap: 104px;
+}
+
+.right__item {
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+  margin-bottom: 224px;
+  transform: translate(-15px, 0);
+  row-gap: 104px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.line {
+  margin-top: 159px;
+  margin-bottom: 105px;
+  width: 4px;
+  background: var(--linear-2);
+  position: relative;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+
+  min-width: 620px;
+  justify-content: center;
+  column-gap: 106px;
+}
+
+.item__wrapper {
+}

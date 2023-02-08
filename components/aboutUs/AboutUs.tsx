@@ -6,7 +6,7 @@ import { ReactSVG } from "react-svg";
 export const AboutUs = () => {
   const line = require("./line.svg").default.src;
   return (
-    <div className={styles.about}>
+    <section className={styles.about}>
       <h2 className={styles.title}>About us</h2>
       <div className={styles.container}>
         <div className={styles.mentors__container}>
@@ -26,7 +26,6 @@ export const AboutUs = () => {
                   className={styles.photo}
                 ></Image>
               </div>
-
               <h4 className={styles.name}>Wade Warren</h4>
               <p className={styles.text}>
                 Front-end engineers work closely with designers
@@ -34,7 +33,6 @@ export const AboutUs = () => {
             </div>
             <div className={`${styles.item} ${styles.second__item}`}>
               <div className={styles.border}>
-                {" "}
                 <Image
                   src={
                     require("../../public/assets/images/Kristin Watson.png")
@@ -46,7 +44,6 @@ export const AboutUs = () => {
                   className={styles.photo}
                 ></Image>
               </div>
-
               <h4 className={styles.name}>Kristin Watson</h4>
               <p className={styles.text}>
                 Front-end engineers work closely with designers
@@ -65,7 +62,6 @@ export const AboutUs = () => {
                   className={styles.photo}
                 ></Image>
               </div>
-
               <h4 className={styles.name}>Robert Fox</h4>
               <p className={styles.text}>
                 Front-end engineers work closely with designers
@@ -73,7 +69,6 @@ export const AboutUs = () => {
             </div>
           </div>
         </div>
-
         <div className={styles.text__info}>
           Front-end engineers work closely with designers to make websites
           beautiful, functional, and fast. This Career Path will teach you not
@@ -81,6 +76,6 @@ export const AboutUs = () => {
           front-end engineer, too.
         </div>
       </div>
-    </div>
+    </section>
   );
 };
