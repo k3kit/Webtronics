@@ -6,6 +6,7 @@ import { Technologies } from "../technologies/Technologies";
 import { Steps } from "../steps/Steps";
 import { Questions } from "../Questions/Questions";
 import { Review } from "../review/Review";
+import { Gallery } from "../Gallery/Gallery";
 
 export const Main = () => {
   return (
@@ -17,6 +18,7 @@ export const Main = () => {
         <Steps />
         <Questions />
         <Review />
+        <Gallery />
       </div>
     </main>
   );
