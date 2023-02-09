@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Main } from "../components/main/Main";
 import { PageWrapper } from "../components/bg-wrapper/PageWrapper";
 import { Header } from "../components/header/Header";
+import { Footer } from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -14,9 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-
       <Main />
-
+      <Footer />
       <PageWrapper />
     </>
   );

@@ -1,0 +1,78 @@
+@use "styles/abstracts/mixins" as *;
+.wrapper {
+  border-top: 1px solid rgba(21, 191, 253, 0.7);
+  background-color: var(--clean-5);
+}
+
+.info__text {
+  @include paragraph_1;
+  line-height: 140%;
+}
+
+.link {
+  @include paragraph_2;
+}
+
+.container {
+  width: 100%;
+  max-width: 1224px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 33px;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  flex-direction: column;
+  max-width: 231px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  flex-direction: column;
+  height: 94px;
+  gap: 16px 145px;
+  flex-wrap: wrap;
+}
+
+.company {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  flex-direction: column;
+}
+.social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.social__title {
+  font-family: var(--font-roboto);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.title {
+  font-family: var(--font-roboto);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.social__links {
+  display: flex;
+  flex-direction: row;
+  gap: 25.5px;
+}
