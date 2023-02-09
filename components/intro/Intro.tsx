@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./style.module.scss";
+import styles from "./intro.module.scss";
 import Image from "next/image";
 import bg from "../../public/assets/images/programmer-working.png";
 import { Button } from "../Button/Button";
 export const Intro = () => {
   return (
-    <section className={styles.intro}>
+    <section className={styles.wrapper}>
       <div className={styles.title__top}>
         <h1 className={styles.title}>Front-end</h1>
         <p className={styles.subtitle}>

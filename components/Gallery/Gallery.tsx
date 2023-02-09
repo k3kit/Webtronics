@@ -5,10 +5,11 @@ import dev1 from "../../public/assets/images/dev1.png";
 import dev2 from "../../public/assets/images/dev2.png";
 import dev3 from "../../public/assets/images/dev3.png";
 import dev4 from "../../public/assets/images/dev4.png";
+import { LandingSections } from "../footer/Footer";
 
 export const Gallery = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id={LandingSections.GALLERY}>
       <h2 className={styles.title}>Gallery</h2>
       <div className={styles.content}>
         <p className={styles.text__top}>

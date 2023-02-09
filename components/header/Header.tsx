@@ -4,12 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/icons/logoWebtronics.svg";
 import { ReactSVG } from "react-svg";
+import { LandingSections } from "../footer/Footer";
 const links = [
-  { path: `/#`, title: "About" },
-  { path: `/#`, title: "Programs" },
-  { path: `/#`, title: "Steps" },
-  { path: `/#`, title: "Questions" },
-  { path: `/#`, title: "Get in touch" },
+  { path: `/#${LandingSections.ABOUT}`, title: "About us" },
+  { path: `/#${LandingSections.STEPS}`, title: "Steps" },
+  { path: `/#${LandingSections.FAQ}`, title: "FAQs" },
+  { path: `/#${LandingSections.REVIEW}`, title: "Review" },
+  { path: `/#${LandingSections.GALLERY}`, title: "Gallery" },
 ];
 
 export const Header = () => {

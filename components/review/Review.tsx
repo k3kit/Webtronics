@@ -4,6 +4,7 @@ import { Slider } from "../slider/Slider";
 import review1 from "../../public/assets/images/man 1.png";
 import review2 from "../../public/assets/images/man 2.png";
 import review3 from "../../public/assets/images/woman 1.png";
+import { LandingSections } from "../footer/Footer";
 
 const ReviewItems = [
   {
@@ -24,7 +25,7 @@ const ReviewItems = [
 ];
 export const Review = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id={LandingSections.REVIEW}>
       <h2 className={styles.title}>Review</h2>
       <Slider items={ReviewItems} />
     </section>

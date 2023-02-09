@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./steps.module.scss";
 import { StepsItem } from "./stept-item/StepsItem";
 import { ReactSVG } from "react-svg";
+import { LandingSections } from "../footer/Footer";
 const StepsList = [
   ["Step 1", "Step 2"],
   ["Step 3", "Step 4"],
@@ -9,7 +10,7 @@ const StepsList = [
 ];
 export const Steps = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id={LandingSections.STEPS}>
       <h2 className={styles.title}>Steps</h2>
       <div className={styles.cards}>
         <div className={styles.left__item}>

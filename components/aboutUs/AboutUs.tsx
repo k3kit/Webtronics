@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./about.module.scss";
 import Image from "next/image";
 import { ReactSVG } from "react-svg";
+import { LandingSections } from "../footer/Footer";
 
 export const AboutUs = () => {
   const line = require("./line.svg").default.src;
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id={LandingSections.ABOUT}>
       <h2 className={styles.title}>About us</h2>
       <div className={styles.container}>
         <div className={styles.mentors__container}>

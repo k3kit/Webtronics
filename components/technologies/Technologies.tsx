@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./tech.module.scss";
 import { Card } from "./card/Card";
+import { LandingSections } from "../footer/Footer";
 
 export const Technologies = () => {
   return (
-    <section className={styles.tech}>
+    <section className={styles.tech} id={LandingSections.PROGRAMMINGTECH}>
       <div className={styles.wrapper}>
         <div className={styles.title__info}>
           <h2 className={styles.title}>Programming technologies</h2>

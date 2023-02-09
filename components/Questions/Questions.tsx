@@ -2,10 +2,11 @@ import React from "react";
 import styles from "./questions.module.scss";
 import { ReactSVG } from "react-svg";
 import { QuestionsList } from "./QuestionsList/QuestionsList";
+import { LandingSections } from "../footer/Footer";
 
 export const Questions = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} id={LandingSections.FAQ}>
       <h2 className={styles.title}>Frequently Asked Questions</h2>
       <div className={styles.container}>
         <div className={styles.left__block}>
